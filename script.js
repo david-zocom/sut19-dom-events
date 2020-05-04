@@ -1,4 +1,4 @@
-console.log('Nu körs skriptet');
+console.log('Script starts executing');
 
 window.addEventListener('load', () => {
     // Danger! This code uses the DOM.
@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
     let actionButton = document.querySelector('#actionButton');
 
     if( actionButton ) {
-        console.log('Action button is ok!');
+        console.log('Action button has loaded');
         actionButton.addEventListener('click', event => {
             console.log('You clicked the button!');
         })
@@ -15,4 +15,4 @@ window.addEventListener('load', () => {
     }
 })
 
-console.log('Nu är skriptet klart');
+console.log('Script finishes executing');
