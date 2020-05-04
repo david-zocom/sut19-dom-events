@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title> DOM manipulation using vanilla JavaScript </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script defer src="script.js" charset="utf-8"></script> -->
+    <script src="script.js" charset="utf-8"></script>
+</head>
+<body>
+    <main>
+        <h1> DOM manipulation </h1>
+        <section>
+            <h2>Vad händer när jag skriver in en URL i webbläsaren?</h2>
+            <p>
+                Vi skickar en "request" till webbläsaren, som (förhoppningsvis) svarar med index.html. Den innehåller länkar till CSS-filer, JavaScript-filer, bilder med mera. Webbläsaren skickar förfrågningar för varje fil och hämtar så många som möjligt samtidigt.
+            </p>
+            <p>
+                Eftersom vi börjar ladda skriptet tidigt (i head) så kan det hända att vi har kört JavaScripten innan all HTML har laddats i document-objektet.
+            </p>
+            <button id="actionButton">Do something!</button>
+            <div id="result">
+                No action yet.
+            </div>
+        </section>
+    </main>
+</body>
+</html>
