@@ -34,6 +34,13 @@ window.addEventListener('load', () => {
         let movieName = inputMovieName.value;
         movieList.appendChild(createMovieItem(movieName));
     });
+
+
+    let submit = document.querySelector('form');
+    submit.addEventListener('submit', e => {
+        console.log('submit event');
+        e.preventDefault();
+    })
 })
 
 function createMovieItem(movieName) {
