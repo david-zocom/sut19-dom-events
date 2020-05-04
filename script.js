@@ -32,14 +32,18 @@ window.addEventListener('load', () => {
 
     addMovieButton.addEventListener('click', e => {
         let movieName = inputMovieName.value;
-        let newEl = document.createElement('li');
-        newEl.innerText = movieName;
-        newEl.addEventListener('click', e => {
-            newEl.classList.toggle('selected');
-        })
-        movieList.appendChild(newEl);
+        movieList.appendChild(createMovieItem(movieName));
     });
 })
+
+function createMovieItem(movieName) {
+    let newEl = document.createElement('li');
+    newEl.innerText = movieName;
+    newEl.addEventListener('click', e => {
+        newEl.classList.toggle('selected');
+    })
+    return newEl;
+}
 
 console.log('Script finishes executing');
 
