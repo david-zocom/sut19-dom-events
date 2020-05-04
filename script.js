@@ -24,6 +24,31 @@ window.addEventListener('load', () => {
     colorButton2.addEventListener('click', event => {
         resultDiv.classList.toggle('color2');
     })
+
+
+    let addMovieButton = document.querySelector('#addMovie');
+    let inputMovieName = document.querySelector('#movieName');
+    let movieList = document.querySelector('#movieList');
+
+    addMovieButton.addEventListener('click', e => {
+        let movieName = inputMovieName.value;
+        let newEl = document.createElement('li');
+        newEl.innerText = movieName;
+        newEl.addEventListener('click', e => {
+            newEl.classList.toggle('selected');
+        })
+        movieList.appendChild(newEl);
+    });
 })
 
 console.log('Script finishes executing');
+
+
+
+
+
+
+
+
+
+//

@@ -1,3 +1,9 @@
+section {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border: 1px solid lightgray;
+    border-radius: 1em;
+}
 
 .color2 {
     background-color: green;
@@ -7,4 +13,19 @@
 .color1 {
     background-color: aqua;
     border: 1px solid gray;
+}
+
+.movieList > * {
+    border: 3px solid gray;
+    background-color: antiquewhite;
+}
+.movieList > :hover {
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.movieList > :nth-child(odd) {
+    background-color: beige;
+}
+.selected {
+    border-color: black;
 }
